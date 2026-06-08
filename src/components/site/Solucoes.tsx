@@ -27,9 +27,6 @@ export function Solucoes() {
     <section id="solucoes" className="relative z-10 border-b-2 border-[var(--color-bone)]">
       <div className="mx-auto max-w-7xl px-5 md:px-8 py-16 md:py-24">
         <div className="max-w-3xl mb-12">
-          <div className="text-xs font-mono uppercase tracking-widest text-[var(--color-rust)] mb-4">
-            // 02 — Soluções
-          </div>
           <h2 className="font-display text-3xl md:text-5xl font-bold text-[var(--color-bone)]">
             Soluções sob medida para negócios reais.
           </h2>

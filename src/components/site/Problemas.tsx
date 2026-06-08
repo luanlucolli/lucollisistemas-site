@@ -28,9 +28,6 @@ export function Problemas() {
     <section className="relative border-b-2 border-[var(--color-bone)]">
       <div className="relative z-10 mx-auto max-w-7xl px-5 md:px-8 py-16 md:py-24">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono uppercase tracking-widest text-[var(--color-rust)] mb-4">
-            // 01 — Problemas
-          </div>
           <h2 className="font-display text-3xl md:text-5xl font-bold text-[var(--color-bone)]">
             Sua empresa não precisa de mais complicação.
           </h2>

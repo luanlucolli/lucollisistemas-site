@@ -12,9 +12,6 @@ export function CtaFinal() {
         className="absolute -right-20 -top-10 w-[700px] max-w-none opacity-[0.12] pointer-events-none select-none"
       />
       <div className="relative mx-auto max-w-7xl px-5 md:px-8 py-20 md:py-32">
-        <div className="text-xs font-mono uppercase tracking-widest text-[var(--color-rust)] mb-4">
-          // 05 — Próximo passo
-        </div>
         <h2 className="font-display text-3xl md:text-5xl lg:text-6xl font-bold text-[var(--color-bone)] max-w-4xl leading-[1.05]">
           Vamos transformar um processo manual em uma{" "}
           <span className="text-[var(--color-rust)]">ferramenta simples</span> de usar?

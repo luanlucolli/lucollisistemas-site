@@ -7,12 +7,9 @@ const STEPS = [
 
 export function ComoFunciona() {
   return (
-    <section id="como-funciona" className="bg-[var(--color-ink)] border-b-2 border-[var(--color-bone)]">
+    <section id="como-funciona" className="bg-[var(--color-ink-2)] border-b-2 border-[var(--color-bone)]">
       <div className="mx-auto max-w-7xl px-5 md:px-8 py-16 md:py-24">
         <div className="max-w-3xl mb-12">
-          <div className="text-xs font-mono uppercase tracking-widest text-[var(--color-rust)] mb-4">
-            // 03 — Processo
-          </div>
           <h2 className="font-display text-3xl md:text-5xl font-bold text-[var(--color-bone)]">
             Do problema à solução, sem complicar.
           </h2>
