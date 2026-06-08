@@ -10,7 +10,7 @@ export function Hero() {
         src={nodesNetwork}
         alt=""
         aria-hidden
-        className="absolute top-1/2 -translate-y-1/2 right-0 translate-x-[30%] md:translate-x-[20%] lg:translate-x-[5%] xl:translate-x-0 w-[1000px] md:w-[1400px] lg:w-[2000px] xl:w-[2200px] max-w-none object-contain pointer-events-none opacity-25 md:opacity-30 lg:opacity-70 [mask-image:linear-gradient(to_right,transparent_0%,black_40%)] lg:[mask-image:linear-gradient(to_right,transparent_10%,black_50%)]"
+        className="absolute top-1/2 -translate-y-1/2 right-0 translate-x-[30%] md:translate-x-[20%] lg:translate-x-[5%] xl:translate-x-0 w-[1000px] md:w-[1400px] lg:w-[2000px] xl:w-[2200px] max-w-none object-contain pointer-events-none [mask-image:linear-gradient(to_right,transparent_0%,black_40%)] lg:[mask-image:linear-gradient(to_right,transparent_10%,black_50%)]"
       />
 
       <div className="relative mx-auto max-w-7xl px-5 md:px-8 py-14 md:py-24 grid lg:grid-cols-[1.1fr_1fr] gap-12 lg:gap-16 items-center">
