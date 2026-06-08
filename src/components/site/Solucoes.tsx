@@ -1,0 +1,85 @@
+const CARDS = [
+  {
+    num: "01",
+    title: "Sites e Landing Pages",
+    text: "Para apresentar sua empresa, explicar seus serviços e gerar contatos qualificados.",
+    items: ["Sites institucionais", "Landing pages", "Formulários", "Botões de WhatsApp", "SEO básico"],
+    invert: false,
+  },
+  {
+    num: "02",
+    title: "Sistemas Web",
+    text: "Para organizar clientes, pedidos, propostas, relatórios e processos internos.",
+    items: ["Login", "Painel administrativo", "Cadastros", "Relatórios", "Banco de dados"],
+    invert: true,
+  },
+  {
+    num: "03",
+    title: "Automações e Integrações",
+    text: "Para conectar WhatsApp, planilhas, APIs, webhooks e ferramentas que sua empresa já usa.",
+    items: ["WhatsApp", "Planilhas", "APIs", "Webhooks", "CRMs", "E-mails automáticos"],
+    invert: false,
+  },
+];
+
+export function Solucoes() {
+  return (
+    <section id="solucoes" className="bg-[var(--color-bone-2)] border-b-2 border-[var(--color-ink)]">
+      <div className="mx-auto max-w-7xl px-5 md:px-8 py-16 md:py-24">
+        <div className="max-w-3xl mb-12">
+          <div className="text-xs font-mono uppercase tracking-widest text-[var(--color-rust)] mb-4">
+            // 02 — Soluções
+          </div>
+          <h2 className="font-display text-3xl md:text-5xl font-bold text-[var(--color-ink)]">
+            Soluções sob medida para negócios reais.
+          </h2>
+        </div>
+
+        <div className="grid lg:grid-cols-3 gap-5 md:gap-6">
+          {CARDS.map((c) => {
+            const dark = c.invert;
+            return (
+              <div
+                key={c.num}
+                className={`border-2 border-[var(--color-ink)] p-6 md:p-8 flex flex-col ${
+                  dark
+                    ? "bg-[var(--color-ink)] text-[var(--color-bone)]"
+                    : "bg-white text-[var(--color-ink)]"
+                }`}
+              >
+                <div className="flex items-center justify-between mb-6 pb-4 border-b-2 border-current">
+                  <span className="text-xs font-mono uppercase tracking-widest opacity-60">
+                    Módulo {c.num}
+                  </span>
+                  <span className="text-[var(--color-rust)] font-display font-bold text-2xl">
+                    {c.num}
+                  </span>
+                </div>
+                <h3 className="font-display text-2xl md:text-3xl font-bold leading-tight">
+                  {c.title}
+                </h3>
+                <p className={`mt-3 text-sm md:text-base leading-relaxed ${dark ? "text-[var(--color-bone)]/75" : "text-[var(--color-ink)]/70"}`}>
+                  {c.text}
+                </p>
+                <ul className="mt-6 flex flex-wrap gap-2">
+                  {c.items.map((i) => (
+                    <li
+                      key={i}
+                      className={`text-xs font-mono px-2.5 py-1.5 border ${
+                        dark
+                          ? "border-[var(--color-bone)]/30 text-[var(--color-bone)]/90"
+                          : "border-[var(--color-ink)] text-[var(--color-ink)]"
+                      }`}
+                    >
+                      {i}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
