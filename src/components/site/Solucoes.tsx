@@ -24,13 +24,13 @@ const CARDS = [
 
 export function Solucoes() {
   return (
-    <section id="solucoes" className="bg-[var(--color-bone-2)] border-b-2 border-[var(--color-ink)]">
+    <section id="solucoes" className="bg-[var(--color-ink-2)] border-b-2 border-[var(--color-bone)]">
       <div className="mx-auto max-w-7xl px-5 md:px-8 py-16 md:py-24">
         <div className="max-w-3xl mb-12">
           <div className="text-xs font-mono uppercase tracking-widest text-[var(--color-rust)] mb-4">
             // 02 — Soluções
           </div>
-          <h2 className="font-display text-3xl md:text-5xl font-bold text-[var(--color-ink)]">
+          <h2 className="font-display text-3xl md:text-5xl font-bold text-[var(--color-bone)]">
             Soluções sob medida para negócios reais.
           </h2>
         </div>
@@ -41,11 +41,12 @@ export function Solucoes() {
             return (
               <div
                 key={c.num}
-                className={`border-2 border-[var(--color-ink)] p-6 md:p-8 flex flex-col ${
+                className={`border-2 border-[var(--color-bone)] p-6 md:p-8 flex flex-col ${
                   dark
-                    ? "bg-[var(--color-ink)] text-[var(--color-bone)]"
-                    : "bg-white text-[var(--color-ink)]"
+                    ? "bg-[var(--color-bone)] text-[var(--color-ink)]"
+                    : "bg-[var(--color-ink-2)] text-[var(--color-bone)]"
                 }`}
+
               >
                 <div className="flex items-center justify-between mb-6 pb-4 border-b-2 border-current">
                   <span className="text-xs font-mono uppercase tracking-widest opacity-60">
@@ -58,7 +59,7 @@ export function Solucoes() {
                 <h3 className="font-display text-2xl md:text-3xl font-bold leading-tight">
                   {c.title}
                 </h3>
-                <p className={`mt-3 text-sm md:text-base leading-relaxed ${dark ? "text-[var(--color-bone)]/75" : "text-[var(--color-ink)]/70"}`}>
+                <p className={`mt-3 text-sm md:text-base leading-relaxed ${dark ? "text-[var(--color-ink)]/75" : "text-[var(--color-bone)]/70"}`}>
                   {c.text}
                 </p>
                 <ul className="mt-6 flex flex-wrap gap-2">
@@ -67,10 +68,11 @@ export function Solucoes() {
                       key={i}
                       className={`text-xs font-mono px-2.5 py-1.5 border ${
                         dark
-                          ? "border-[var(--color-bone)]/30 text-[var(--color-bone)]/90"
-                          : "border-[var(--color-ink)] text-[var(--color-ink)]"
+                          ? "border-[var(--color-ink)]/40 text-[var(--color-ink)]"
+                          : "border-[var(--color-bone)]/40 text-[var(--color-bone)]"
                       }`}
                     >
+
                       {i}
                     </li>
                   ))}

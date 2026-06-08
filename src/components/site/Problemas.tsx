@@ -25,16 +25,16 @@ const ITEMS = [
 
 export function Problemas() {
   return (
-    <section className="bg-[var(--color-bone)] border-b-2 border-[var(--color-ink)]">
+    <section className="bg-[var(--color-ink)] border-b-2 border-[var(--color-bone)]">
       <div className="mx-auto max-w-7xl px-5 md:px-8 py-16 md:py-24">
         <div className="max-w-3xl">
           <div className="text-xs font-mono uppercase tracking-widest text-[var(--color-rust)] mb-4">
             // 01 — Problemas
           </div>
-          <h2 className="font-display text-3xl md:text-5xl font-bold text-[var(--color-ink)]">
+          <h2 className="font-display text-3xl md:text-5xl font-bold text-[var(--color-bone)]">
             Sua empresa não precisa de mais complicação.
           </h2>
-          <p className="mt-4 text-[var(--color-ink)]/70 text-base md:text-lg">
+          <p className="mt-4 text-[var(--color-bone)]/70 text-base md:text-lg">
             Precisa de ferramentas simples, bem feitas e conectadas com o dia a dia do negócio.
           </p>
         </div>
@@ -43,21 +43,21 @@ export function Problemas() {
           {ITEMS.map(({ icon: Icon, title, text }) => (
             <div
               key={title}
-              className="group bg-white border-2 border-[var(--color-ink)] p-6 md:p-8 hover:brutal-shadow-rust transition-all"
+              className="group bg-[var(--color-ink-2)] border-2 border-[var(--color-bone)] p-6 md:p-8 hover:brutal-shadow-rust transition-all"
             >
               <div className="flex items-start justify-between mb-6">
                 <Icon
                   className="h-8 w-8 text-[var(--color-rust)]"
                   strokeWidth={1.75}
                 />
-                <span className="text-[10px] font-mono text-[var(--color-ink)]/40 uppercase tracking-widest">
+                <span className="text-[10px] font-mono text-[var(--color-bone)]/40 uppercase tracking-widest">
                   Problema
                 </span>
               </div>
-              <h3 className="font-display text-xl md:text-2xl font-bold text-[var(--color-ink)]">
+              <h3 className="font-display text-xl md:text-2xl font-bold text-[var(--color-bone)]">
                 {title}
               </h3>
-              <p className="mt-2 text-sm md:text-base text-[var(--color-ink)]/70 leading-relaxed">
+              <p className="mt-2 text-sm md:text-base text-[var(--color-bone)]/70 leading-relaxed">
                 {text}
               </p>
             </div>

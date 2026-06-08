@@ -7,16 +7,16 @@ const CASES = [
 
 export function Projetos() {
   return (
-    <section id="projetos" className="bg-[var(--color-bone-2)] border-b-2 border-[var(--color-ink)]">
+    <section id="projetos" className="bg-[var(--color-ink-2)] border-b-2 border-[var(--color-bone)]">
       <div className="mx-auto max-w-7xl px-5 md:px-8 py-16 md:py-24">
         <div className="max-w-3xl mb-12">
           <div className="text-xs font-mono uppercase tracking-widest text-[var(--color-rust)] mb-4">
             // 04 — Projetos
           </div>
-          <h2 className="font-display text-3xl md:text-5xl font-bold text-[var(--color-ink)]">
+          <h2 className="font-display text-3xl md:text-5xl font-bold text-[var(--color-bone)]">
             Projetos que já saíram do papel.
           </h2>
-          <p className="mt-4 text-[var(--color-ink)]/70 text-base md:text-lg">
+          <p className="mt-4 text-[var(--color-bone)]/70 text-base md:text-lg">
             Antes da Luçolli Sistemas, já foram entregues sites, aplicações e integrações para
             negócios reais.
           </p>
@@ -26,16 +26,16 @@ export function Projetos() {
           {CASES.map((c, i) => (
             <article
               key={c.title}
-              className="bg-white border-2 border-[var(--color-ink)] flex flex-col"
+              className="bg-[var(--color-ink-2)] border-2 border-[var(--color-bone)] flex flex-col"
             >
               {/* Área reservada para print real */}
-              <div className="aspect-[16/9] border-b-2 border-[var(--color-ink)] bg-[var(--color-bone-2)] relative overflow-hidden">
-                <div className="absolute inset-3 border border-dashed border-[var(--color-ink)]/30 flex items-center justify-center">
-                  <span className="text-[10px] font-mono uppercase tracking-widest text-[var(--color-ink)]/40">
+              <div className="aspect-[16/9] border-b-2 border-[var(--color-bone)] bg-[var(--color-ink-2)] relative overflow-hidden">
+                <div className="absolute inset-3 border border-dashed border-[var(--color-bone)]/30 flex items-center justify-center">
+                  <span className="text-[10px] font-mono uppercase tracking-widest text-[var(--color-bone)]/40">
                     print do projeto
                   </span>
                 </div>
-                <div className="absolute top-3 left-3 text-[10px] font-mono text-[var(--color-ink)]/50">
+                <div className="absolute top-3 left-3 text-[10px] font-mono text-[var(--color-bone)]/50">
                   case_{String(i + 1).padStart(2, "0")}
                 </div>
               </div>
@@ -43,10 +43,10 @@ export function Projetos() {
                 <span className="inline-block bg-[var(--color-rust)] text-[var(--color-bone)] text-[10px] font-mono uppercase tracking-widest px-2 py-1 mb-4">
                   {c.tag}
                 </span>
-                <h3 className="font-display text-xl md:text-2xl font-bold text-[var(--color-ink)]">
+                <h3 className="font-display text-xl md:text-2xl font-bold text-[var(--color-bone)]">
                   {c.title}
                 </h3>
-                <p className="mt-2 text-sm text-[var(--color-ink)]/70 leading-relaxed">{c.text}</p>
+                <p className="mt-2 text-sm text-[var(--color-bone)]/70 leading-relaxed">{c.text}</p>
               </div>
             </article>
           ))}
