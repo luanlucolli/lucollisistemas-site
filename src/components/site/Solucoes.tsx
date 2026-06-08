@@ -59,7 +59,7 @@ export function Solucoes() {
                 <h3 className="font-display text-2xl md:text-3xl font-bold leading-tight">
                   {c.title}
                 </h3>
-                <p className={`mt-3 text-sm md:text-base leading-relaxed ${dark ? "text-[var(--color-bone)]/75" : "text-[var(--color-bone)]/70"}`}>
+                <p className={`mt-3 text-sm md:text-base leading-relaxed ${dark ? "text-[var(--color-ink)]/75" : "text-[var(--color-bone)]/70"}`}>
                   {c.text}
                 </p>
                 <ul className="mt-6 flex flex-wrap gap-2">
@@ -68,10 +68,11 @@ export function Solucoes() {
                       key={i}
                       className={`text-xs font-mono px-2.5 py-1.5 border ${
                         dark
-                          ? "border-[var(--color-bone)]/30 text-[var(--color-bone)]/90"
-                          : "border-[var(--color-bone)] text-[var(--color-bone)]"
+                          ? "border-[var(--color-ink)]/40 text-[var(--color-ink)]"
+                          : "border-[var(--color-bone)]/40 text-[var(--color-bone)]"
                       }`}
                     >
+
                       {i}
                     </li>
                   ))}

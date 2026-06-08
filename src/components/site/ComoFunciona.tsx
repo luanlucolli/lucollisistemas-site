@@ -18,9 +18,10 @@ export function ComoFunciona() {
           </h2>
         </div>
 
-        <div className="relative grid md:grid-cols-4 gap-px bg-[var(--color-ink)] border-2 border-[var(--color-bone)]">
+        <div className="relative grid md:grid-cols-4 gap-px bg-[var(--color-bone)] border-2 border-[var(--color-bone)]">
           {STEPS.map((s) => (
-            <div key={s.n} className="bg-[var(--color-ink)] p-6 md:p-8 flex flex-col">
+            <div key={s.n} className="bg-[var(--color-ink-2)] p-6 md:p-8 flex flex-col">
+
               <div className="flex items-baseline justify-between mb-6">
                 <span className="font-display font-bold text-5xl md:text-6xl text-[var(--color-rust)] leading-none">
                   {s.n}
