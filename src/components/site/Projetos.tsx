@@ -15,12 +15,12 @@ const CASES = [
     text: "Site institucional para uma empresa de engenharia em Porto Alegre/RS, com foco em segurança, qualidade, responsabilidade técnica e cumprimento de prazos.",
     image: vbbTechImage,
   },
-  {
-    tag: "Sistema web",
-    title: "Sistema interno p/ recebimento e gestão de leads",
-    text: "Sistema web para gestão de leads recebidos via webhook, usado em operações parceiras da UY3. Conta com backend em Go, autenticação, dashboard operacional, filtros por período e exportação CSV para centralizar os dados e reduzir o trabalho manual na conferência e organização dos leads.",
-    image: focoPromotoraImage,
-  },
+ {
+  tag: "Sistema web",
+  title: "Painel interno para gestão de leads",
+  text: "Sistema criado para receber leads automaticamente via webhook, organizar os dados em um painel e permitir filtros por período e exportação CSV. Menos conferência manual, mais controle da operação.",
+  image: focoPromotoraImage,
+},
 ];
 
 export function Projetos() {
