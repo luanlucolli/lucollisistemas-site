@@ -1,29 +1,46 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Header } from "@/components/site/Header";
+import { Hero } from "@/components/site/Hero";
+import { Problemas } from "@/components/site/Problemas";
+import { Solucoes } from "@/components/site/Solucoes";
+import { ComoFunciona } from "@/components/site/ComoFunciona";
+import { Projetos } from "@/components/site/Projetos";
+import { CtaFinal } from "@/components/site/CtaFinal";
+import { Footer } from "@/components/site/Footer";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "Luçolli Sistemas — Sites, sistemas e automações sob medida" },
+      {
+        name: "description",
+        content:
+          "Criamos sites, sistemas web e automações sob medida. Integrações com WhatsApp, planilhas, APIs e webhooks para empresas que querem reduzir tarefas manuais.",
+      },
+      { property: "og:title", content: "Luçolli Sistemas — Tecnologia prática para empresas" },
+      {
+        property: "og:description",
+        content:
+          "Sites, sistemas e automações sob medida. Integrações com WhatsApp, planilhas, APIs e webhooks.",
+      },
     ],
   }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-[var(--color-bone)]">
+      <Header />
+      <main>
+        <Hero />
+        <Problemas />
+        <Solucoes />
+        <ComoFunciona />
+        <Projetos />
+        <CtaFinal />
+      </main>
+      <Footer />
     </div>
   );
 }
