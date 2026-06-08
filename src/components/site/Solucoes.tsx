@@ -31,7 +31,7 @@ export function Solucoes() {
             O que podemos construir para sua empresa.
           </h2>
           <p className="mt-4 max-w-2xl text-base md:text-lg text-[var(--color-bone)]/70 leading-relaxed">
-            Do primeiro contato ao processo interno: criamos ferramentas para organizar a operação,
+            Criamos ferramentas para organizar a operação,
             reduzir trabalho manual e deixar as informações no lugar certo.
           </p>
         </div>

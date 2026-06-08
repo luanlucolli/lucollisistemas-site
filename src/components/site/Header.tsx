@@ -48,7 +48,7 @@ export function Header() {
             rel="noreferrer"
             className="bg-[var(--color-rust)] text-[var(--color-bone)] px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[4px_4px_0_var(--color-bone)] transition-all border-2 border-[var(--color-rust)]"
           >
-            Solicitar diagnóstico
+            Entrar em contato
           </a>
         </nav>
         <div className="flex items-center gap-2 lg:hidden">
