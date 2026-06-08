@@ -24,13 +24,13 @@ export function NetworkBackground() {
           md:rotate-[-70deg]
           md:opacity-[0.62]
 
-          lg:top-[-8rem]
+          lg:top-[-1rem]
           lg:right-[-54rem]
           lg:w-[3200px]
           lg:rotate-[140deg]
           lg:opacity-[0.72]
 
-          xl:top-[0rem]
+          xl:top-[5rem]
           xl:right-[-58rem]
           xl:w-[3600px]
 
