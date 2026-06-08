@@ -24,7 +24,7 @@ const CARDS = [
 
 export function Solucoes() {
   return (
-    <section id="solucoes" className="bg-[var(--color-ink-2)] border-b-2 border-[var(--color-bone)]">
+    <section id="solucoes" className="relative z-10 border-b-2 border-[var(--color-bone)]">
       <div className="mx-auto max-w-7xl px-5 md:px-8 py-16 md:py-24">
         <div className="max-w-3xl mb-12">
           <div className="text-xs font-mono uppercase tracking-widest text-[var(--color-rust)] mb-4">
@@ -41,16 +41,15 @@ export function Solucoes() {
             return (
               <div
                 key={c.num}
-                className={`border-2 border-[var(--color-bone)] p-6 md:p-8 flex flex-col ${
+                className={`relative z-20 border-2 border-[var(--color-bone)] p-6 md:p-8 flex flex-col ${
                   dark
                     ? "bg-[var(--color-bone)] text-[var(--color-ink)]"
                     : "bg-[var(--color-ink-2)] text-[var(--color-bone)]"
                 }`}
-
               >
                 <div className="flex items-center justify-between mb-6 pb-4 border-b-2 border-current">
                   <span className="text-xs font-mono uppercase tracking-widest opacity-60">
-                    Módulo {c.num}
+                    Solução {c.num}
                   </span>
                   <span className="text-[var(--color-rust)] font-display font-bold text-2xl">
                     {c.num}
@@ -72,7 +71,6 @@ export function Solucoes() {
                           : "border-[var(--color-bone)]/40 text-[var(--color-bone)]"
                       }`}
                     >
-
                       {i}
                     </li>
                   ))}
