@@ -1,12 +1,12 @@
 import { ArrowRight, MessageCircle } from "lucide-react";
-import nodesAsset from "@/assets/nodes-network.png.asset.json";
+import nodesNetwork from "@/assets/conexoes-laranja-diagonal-transparente.svg";
 import { WHATSAPP_URL } from "./contact";
 
 export function CtaFinal() {
   return (
     <section id="contato" className="relative bg-[var(--color-ink)] overflow-hidden border-b-2 border-[var(--color-rust)]">
       <img
-        src={nodesAsset.url}
+        src={nodesNetwork}
         alt=""
         aria-hidden
         className="absolute -right-20 -top-10 w-[700px] max-w-none opacity-[0.12] pointer-events-none select-none"

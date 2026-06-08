@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
-import logoAsset from "@/assets/lucolli-logo.png.asset.json";
+import logoImage from "@/assets/lucolli-logo.png.png";
 import { WHATSAPP_URL } from "./contact";
 
 const NAV = [
@@ -16,7 +16,7 @@ export function Header() {
     <header className="sticky top-0 z-50 bg-[var(--color-ink)] border-b-2 border-[var(--color-rust)]">
       <div className="mx-auto max-w-7xl px-5 md:px-8 h-16 md:h-20 flex items-center justify-between">
         <a href="#top" className="flex items-center">
-          <img src={logoAsset.url} alt="Luçolli Sistemas" className="h-7 md:h-9 w-auto" />
+          <img src={logoImage} alt="Luçolli Sistemas" className="h-7 md:h-9 w-auto" />
         </a>
         <nav className="hidden lg:flex items-center gap-8">
           {NAV.map((n) => (
