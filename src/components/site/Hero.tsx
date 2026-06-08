@@ -15,18 +15,18 @@ export function Hero() {
 
       <div className="relative z-10 mx-auto max-w-7xl px-5 md:px-8 pt-32 pb-14 md:pt-40 md:pb-24 grid lg:grid-cols-[1.1fr_1fr] gap-12 lg:gap-16 items-center">
         <div className="relative z-10">
-          <h1 className="font-display text-[2.5rem] leading-[1.02] sm:text-5xl md:text-6xl lg:text-[4.25rem] font-bold text-[var(--color-bone)]">
+          <h1 className="max-w-4xl font-display text-[2.75rem] leading-[0.98] sm:text-5xl md:text-[3.9rem] lg:text-[4.35rem] font-bold tracking-[-0.03em] text-[var(--color-bone)]">
             Sites, sistemas e automações que{" "}
             <span className="inline-block bg-gradient-to-t from-[var(--color-rust)] from-90% to-transparent to-90% text-[var(--color-bone)] px-2">
               organizam
             </span>{" "}
             seu negócio.
           </h1>
-          <p className="mt-6 text-base md:text-lg text-[var(--color-bone)]/75 max-w-xl leading-relaxed">
+          <p className="mt-6 max-w-2xl text-base md:text-lg text-[var(--color-bone)]/74 leading-relaxed">
             Criamos soluções digitais sob medida para empresas que precisam captar clientes,
             integrar ferramentas e reduzir tarefas manuais.
           </p>
-          <p className="mt-4 text-sm md:text-base text-[var(--color-bone)] font-medium max-w-xl">
+          <p className="mt-4 max-w-2xl text-sm md:text-base text-[var(--color-bone)]/92 font-medium leading-relaxed">
             Integrações com WhatsApp, planilhas, APIs e webhooks. Tudo feito para o seu processo.
           </p>
 

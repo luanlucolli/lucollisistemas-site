@@ -26,10 +26,14 @@ export function Solucoes() {
   return (
     <section id="solucoes" className="relative z-10 border-b-2 border-[var(--color-bone)]">
       <div className="mx-auto max-w-7xl px-5 md:px-8 py-16 md:py-24">
-        <div className="max-w-3xl mb-12">
-          <h2 className="font-display text-3xl md:text-5xl font-bold text-[var(--color-bone)]">
+        <div className="max-w-3xl mb-12 md:mb-14">
+          <h2 className="font-display text-3xl md:text-5xl font-bold tracking-[-0.03em] leading-[1.04] text-[var(--color-bone)]">
             Soluções sob medida para negócios reais.
           </h2>
+          <p className="mt-4 max-w-2xl text-base md:text-lg text-[var(--color-bone)]/70 leading-relaxed">
+            Cada entrega e pensada para melhorar a operação, facilitar o atendimento e dar mais
+            clareza para o dono do negócio.
+          </p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-5 md:gap-6">
@@ -52,7 +56,7 @@ export function Solucoes() {
                     {c.num}
                   </span>
                 </div>
-                <h3 className="font-display text-2xl md:text-3xl font-bold leading-tight">
+                <h3 className="font-display text-xl md:text-[1.75rem] font-bold leading-[1.08] tracking-[-0.02em]">
                   {c.title}
                 </h3>
                 <p className={`mt-3 text-sm md:text-base leading-relaxed ${dark ? "text-[var(--color-ink)]/75" : "text-[var(--color-bone)]/70"}`}>

@@ -32,12 +32,12 @@ export function Header() {
         <a href="#top" className="flex items-center">
           <img src={logoImage} alt="Luçolli Sistemas" className="h-7 md:h-9 w-auto" />
         </a>
-        <nav className="hidden lg:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-7 xl:gap-8">
           {NAV.map((n) => (
             <a
               key={n.href}
               href={n.href}
-              className="text-[var(--color-bone)]/80 hover:text-[var(--color-rust)] text-sm font-medium transition-colors"
+              className="text-[var(--color-bone)]/78 hover:text-[var(--color-rust)] text-sm font-medium tracking-[-0.01em] transition-colors"
             >
               {n.label}
             </a>

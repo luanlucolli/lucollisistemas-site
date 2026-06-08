@@ -7,7 +7,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-5 md:px-8 py-14 md:py-16 grid md:grid-cols-[1.5fr_1fr_1fr] gap-10">
         <div>
           <img src={logoImage} alt="Luçolli Sistemas" className="h-9 w-auto mb-5" />
-          <p className="text-[var(--color-bone)]/70 text-sm max-w-sm leading-relaxed">
+          <p className="text-[var(--color-bone)]/70 text-sm md:text-base max-w-sm leading-relaxed">
             Sites, sistemas e automações para empresas.
           </p>
         </div>
@@ -15,7 +15,7 @@ export function Footer() {
           <div className="text-[10px] font-mono uppercase tracking-widest text-[var(--color-rust)] mb-4">
             Navegar
           </div>
-          <ul className="space-y-2.5 text-sm">
+          <ul className="space-y-2.5 text-sm md:text-base">
             <li><a href="#solucoes" className="hover:text-[var(--color-rust)]">Soluções</a></li>
             <li><a href="#como-funciona" className="hover:text-[var(--color-rust)]">Como funciona</a></li>
             <li><a href="#projetos" className="hover:text-[var(--color-rust)]">Projetos</a></li>
@@ -26,7 +26,7 @@ export function Footer() {
           <div className="text-[10px] font-mono uppercase tracking-widest text-[var(--color-rust)] mb-4">
             Contato
           </div>
-          <ul className="space-y-2.5 text-sm">
+          <ul className="space-y-2.5 text-sm md:text-base">
             <li>
               <a href={WHATSAPP_URL} target="_blank" rel="noreferrer" className="hover:text-[var(--color-rust)]">
                 WhatsApp · {WHATSAPP_DISPLAY}

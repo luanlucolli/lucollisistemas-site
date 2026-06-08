@@ -9,11 +9,11 @@ export function Projetos() {
   return (
     <section id="projetos" className="bg-[var(--color-ink)] border-b-2 border-[var(--color-bone)]">
       <div className="mx-auto max-w-7xl px-5 md:px-8 py-16 md:py-24">
-        <div className="max-w-3xl mb-12">
-          <h2 className="font-display text-3xl md:text-5xl font-bold text-[var(--color-bone)]">
+        <div className="max-w-3xl mb-12 md:mb-14">
+          <h2 className="font-display text-3xl md:text-5xl font-bold tracking-[-0.03em] leading-[1.04] text-[var(--color-bone)]">
             Projetos que já saíram do papel.
           </h2>
-          <p className="mt-4 text-[var(--color-bone)]/70 text-base md:text-lg">
+          <p className="mt-4 max-w-2xl text-[var(--color-bone)]/70 text-base md:text-lg leading-relaxed">
             Antes da Luçolli Sistemas, já foram entregues sites, aplicações e integrações para
             negócios reais.
           </p>
@@ -40,10 +40,10 @@ export function Projetos() {
                 <span className="inline-block bg-[var(--color-rust)] text-[var(--color-bone)] text-[10px] font-mono uppercase tracking-widest px-2 py-1 mb-4">
                   {c.tag}
                 </span>
-                <h3 className="font-display text-xl md:text-2xl font-bold text-[var(--color-bone)]">
+                <h3 className="font-display text-xl md:text-[1.75rem] font-bold tracking-[-0.02em] leading-[1.08] text-[var(--color-bone)]">
                   {c.title}
                 </h3>
-                <p className="mt-2 text-sm text-[var(--color-bone)]/70 leading-relaxed">{c.text}</p>
+                <p className="mt-3 text-sm md:text-base text-[var(--color-bone)]/70 leading-relaxed">{c.text}</p>
               </div>
             </article>
           ))}
