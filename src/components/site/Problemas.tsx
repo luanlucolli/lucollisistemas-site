@@ -25,8 +25,8 @@ const ITEMS = [
 
 export function Problemas() {
   return (
-    <section className="bg-[var(--color-ink)] border-b-2 border-[var(--color-bone)]">
-      <div className="mx-auto max-w-7xl px-5 md:px-8 py-16 md:py-24">
+    <section className="relative border-b-2 border-[var(--color-bone)]">
+      <div className="relative z-10 mx-auto max-w-7xl px-5 md:px-8 py-16 md:py-24">
         <div className="max-w-3xl">
           <div className="text-xs font-mono uppercase tracking-widest text-[var(--color-rust)] mb-4">
             // 01 — Problemas

@@ -30,9 +30,9 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <div className="min-h-screen bg-[var(--color-bone)]">
+    <div className="min-h-screen bg-[var(--color-ink)] overflow-x-hidden">
       <Header />
-      <main>
+      <main className="pt-16 md:pt-20">
         <Hero />
         <Problemas />
         <Solucoes />

@@ -13,7 +13,7 @@ const NAV = [
 export function Header() {
   const [open, setOpen] = useState(false);
   return (
-    <header className="sticky top-0 z-50 bg-[var(--color-ink)] border-b-2 border-[var(--color-rust)]">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[var(--color-ink)]/80 backdrop-blur-md">
       <div className="mx-auto max-w-7xl px-5 md:px-8 h-16 md:h-20 flex items-center justify-between">
         <a href="#top" className="flex items-center">
           <img src={logoImage} alt="Luçolli Sistemas" className="h-7 md:h-9 w-auto" />

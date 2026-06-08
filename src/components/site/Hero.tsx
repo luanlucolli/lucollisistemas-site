@@ -4,17 +4,21 @@ import { WHATSAPP_URL } from "./contact";
 
 export function Hero() {
   return (
-    <section id="top" className="bg-[var(--color-ink)] border-b-2 border-[var(--color-bone)] overflow-hidden relative">
-      {/* figura de conexões/rede gigante com máscara de gradiente pra suavizar a borda esquerda */}
+    <section id="top" className="relative">
+      {/* figura gigante vazando pras seções de cima e de baixo */}
       <img
         src={nodesNetwork}
         alt=""
         aria-hidden
-        className="absolute top-1/2 -translate-y-1/2 right-0 translate-x-[30%] md:translate-x-[20%] lg:translate-x-[5%] xl:translate-x-0 w-[1000px] md:w-[1400px] lg:w-[2000px] xl:w-[2200px] max-w-none object-contain pointer-events-none lg:opacity-70 [mask-image:linear-gradient(to_right,transparent_0%,black_40%)] lg:[mask-image:linear-gradient(to_right,transparent_10%,black_50%)]"
+        className="absolute top-1/2 -translate-y-1/2 right-0 translate-x-[28%] rotate-[330deg] md:translate-x-[34%] lg:translate-x-[18%] xl:translate-x-[12%] w-[1200px] md:w-[1600px] lg:w-[2200px] xl:w-[2600px] max-w-none object-contain pointer-events-none opacity-40 lg:opacity-70 [mask-image:linear-gradient(to_right,transparent_0%,black_40%)] lg:[mask-image:linear-gradient(to_right,transparent_10%,black_50%)] z-0"
       />
 
-      <div className="relative mx-auto max-w-7xl px-5 md:px-8 py-14 md:py-24 grid lg:grid-cols-[1.1fr_1fr] gap-12 lg:gap-16 items-center">
+      <div className="relative z-10 mx-auto max-w-7xl px-5 md:px-8 py-14 md:py-24 grid lg:grid-cols-[1.1fr_1fr] gap-12 lg:gap-16 items-center">
         <div className="relative z-10">
+          <div className="inline-flex items-center gap-2 mb-6 text-xs font-mono uppercase tracking-widest text-[var(--color-bone)]/70">
+            <span className="h-px w-8 bg-[var(--color-rust)]" />
+            Luçolli Sistemas
+          </div>
           <h1 className="font-display text-[2.5rem] leading-[1.02] sm:text-5xl md:text-6xl lg:text-[4.25rem] font-bold text-[var(--color-bone)]">
             Sites, sistemas e automações que{" "}
             <span className="inline-block bg-gradient-to-t from-[var(--color-rust)] from-90% to-transparent to-90% text-[var(--color-bone)] px-2">
@@ -47,6 +51,18 @@ export function Hero() {
               Ver soluções
             </a>
           </div>
+
+          <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-[var(--color-bone)]/70 font-mono relative z-10">
+            <li className="flex items-center gap-2">
+              <span className="h-1.5 w-1.5 bg-[var(--color-rust)]" /> Fácil de usar
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="h-1.5 w-1.5 bg-[var(--color-rust)]" /> Menos retrabalho
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="h-1.5 w-1.5 bg-[var(--color-rust)]" /> Mais controle
+            </li>
+          </ul>
         </div>
 
         {/* coluna direita vazia, para manter o grid segurando a barra no layout */}
