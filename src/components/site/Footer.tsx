@@ -1,4 +1,4 @@
-import logoAsset from "@/assets/lucolli-logo.png.asset.json";
+import logoImage from "@/assets/lucolli-logo.png.png";
 import { WHATSAPP_URL, WHATSAPP_DISPLAY, INSTAGRAM, INSTAGRAM_URL, EMAIL } from "./contact";
 
 export function Footer() {
@@ -6,7 +6,7 @@ export function Footer() {
     <footer className="bg-[var(--color-ink)] text-[var(--color-bone)]">
       <div className="mx-auto max-w-7xl px-5 md:px-8 py-14 md:py-16 grid md:grid-cols-[1.5fr_1fr_1fr] gap-10">
         <div>
-          <img src={logoAsset.url} alt="Luçolli Sistemas" className="h-9 w-auto mb-5" />
+          <img src={logoImage} alt="Luçolli Sistemas" className="h-9 w-auto mb-5" />
           <p className="text-[var(--color-bone)]/70 text-sm max-w-sm leading-relaxed">
             Sites, sistemas e automações para empresas.
           </p>
