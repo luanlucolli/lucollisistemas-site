@@ -13,8 +13,9 @@ export function Hero() {
           </div>
           <h1 className="font-display text-[2.5rem] leading-[1.02] sm:text-5xl md:text-6xl lg:text-[4.25rem] font-bold text-[var(--color-bone)]">
             Sites, sistemas e automações que{" "}
-            <span className="bg-[var(--color-rust)] text-[var(--color-bone)] px-2">organizam</span>{" "}
-            seu negócio.
+<span className="inline-block bg-gradient-to-t from-[var(--color-rust)] from-90% to-transparent to-90% text-[var(--color-bone)] px-2">
+  organizam
+</span>            seu negócio.
           </h1>
           <p className="mt-6 text-base md:text-lg text-[var(--color-bone)]/75 max-w-xl leading-relaxed">
             Criamos soluções digitais sob medida para empresas que precisam captar clientes,
