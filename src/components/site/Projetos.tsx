@@ -32,8 +32,8 @@ export function Projetos() {
             Projetos que já saíram do papel.
           </h2>
           <p className="mt-4 max-w-2xl text-[var(--color-bone)]/70 text-base md:text-lg leading-relaxed">
-            Antes da Luçolli Sistemas, já foram entregues sites, aplicações e integrações para
-            negócios reais.
+            Projetos reais, desenvolvidos e entregues para clientes que precisavam melhorar sua
+            presença digital, organizar operações e reduzir trabalho manual no dia a dia.
           </p>
         </div>
 
