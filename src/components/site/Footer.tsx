@@ -3,7 +3,7 @@ import { WHATSAPP_URL, WHATSAPP_DISPLAY, INSTAGRAM, INSTAGRAM_URL, EMAIL } from 
 
 export function Footer() {
   return (
-    <footer className="bg-[var(--color-ink)] text-[var(--color-bone)]">
+    <footer className="bg-[var(--color-ink-2)] text-[var(--color-bone)]">
       <div className="mx-auto max-w-7xl px-5 md:px-8 py-14 md:py-16 grid md:grid-cols-[1.5fr_1fr_1fr] gap-10">
         <div>
           <img src={logoImage} alt="Luçolli Sistemas" className="h-9 w-auto mb-5" />
