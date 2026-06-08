@@ -13,7 +13,7 @@ export function Hero() {
           </div>
           <h1 className="font-display text-[2.5rem] leading-[1.02] sm:text-5xl md:text-6xl lg:text-[4.25rem] font-bold text-[var(--color-bone)]">
             Sites, sistemas e automações que{" "}
-            <span className="bg-[var(--color-ink)] text-[var(--color-bone)] px-2">organizam</span>{" "}
+            <span className="bg-[var(--color-rust)] text-[var(--color-bone)] px-2">organizam</span>{" "}
             seu negócio.
           </h1>
           <p className="mt-6 text-base md:text-lg text-[var(--color-bone)]/75 max-w-xl leading-relaxed">
@@ -36,7 +36,7 @@ export function Hero() {
             </a>
             <a
               href="#solucoes"
-              className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--color-bone)] px-6 py-4 font-semibold uppercase tracking-wide text-sm border-2 border-[var(--color-bone)] hover:bg-[var(--color-ink)] hover:text-[var(--color-bone)] transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--color-bone)] px-6 py-4 font-semibold uppercase tracking-wide text-sm border-2 border-[var(--color-bone)] hover:bg-[var(--color-bone)] hover:text-[var(--color-ink)] transition-colors"
             >
               Ver soluções
             </a>
@@ -57,7 +57,7 @@ export function Hero() {
 
         {/* Lado direito — bloco com imagem dos nós (substituível) */}
         <div className="relative">
-          <div className="absolute -top-3 -left-3 right-6 bottom-6 bg-[var(--color-ink)]" aria-hidden />
+          <div className="absolute -top-3 -left-3 right-6 bottom-6 bg-[var(--color-rust)]" aria-hidden />
           <div className="relative bg-[var(--color-ink-2)] border-2 border-[var(--color-bone)] aspect-[4/5] sm:aspect-[5/4] lg:aspect-square overflow-hidden">
             <div className="absolute top-3 left-3 right-3 flex items-center justify-between text-[10px] font-mono uppercase tracking-widest text-[var(--color-bone)]/60 z-10">
               <span>// rede.integrações</span>
