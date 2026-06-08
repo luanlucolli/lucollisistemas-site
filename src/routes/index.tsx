@@ -4,7 +4,6 @@ import { Hero } from "@/components/site/Hero";
 import { Solucoes } from "@/components/site/Solucoes";
 import { ComoFunciona } from "@/components/site/ComoFunciona";
 import { Projetos } from "@/components/site/Projetos";
-import { CtaFinal } from "@/components/site/CtaFinal";
 import { Footer } from "@/components/site/Footer";
 
 export const Route = createFileRoute("/")({
@@ -36,7 +35,6 @@ function Index() {
         <Solucoes />
         <ComoFunciona />
         <Projetos />
-        <CtaFinal />
       </main>
       <Footer />
     </div>
