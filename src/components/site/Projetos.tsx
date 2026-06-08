@@ -1,5 +1,6 @@
 import ibApoioImage from "@/assets/ibapoio.png";
 import focoPromotoraImage from "@/assets/leadsuy3.focopromotora.com.br_.png";
+import landingvilleImage from "@/assets/landingville.png";
 import vbbTechImage from "@/assets/vbbtech.png";
 
 const CASES = [
@@ -11,16 +12,22 @@ const CASES = [
   },
   {
     tag: "Site institucional",
-    title: "VBB TECH",
+    title: "VBB Tech",
     text: "Site institucional para uma empresa de engenharia em Porto Alegre/RS, com foco em segurança, qualidade, responsabilidade técnica e cumprimento de prazos.",
     image: vbbTechImage,
   },
- {
-  tag: "Sistema web",
-  title: "Painel interno para gestão de leads",
-  text: "Sistema criado para receber leads automaticamente via webhook, organizar os dados em um painel e permitir filtros por período e exportação CSV. Menos conferência manual, mais controle da operação.",
-  image: focoPromotoraImage,
-},
+  {
+    tag: "Sistema web",
+    title: "Painel interno para gestão de leads",
+    text: "Sistema criado para receber leads automaticamente via webhook, organizar os dados em um painel e permitir filtros por período e exportação CSV. Menos conferência manual, mais controle da operação.",
+    image: focoPromotoraImage,
+  },
+  {
+    tag: "Landing Page",
+    title: "Landingville",
+    text: "Página de captação criada para negócios locais, com diagnóstico rápido, apresentação de serviços, exemplos visuais e contato direto por WhatsApp ou Instagram.",
+    image: landingvilleImage,
+  },
 ];
 
 export function Projetos() {
