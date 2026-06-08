@@ -43,9 +43,10 @@ export function Solucoes() {
                 key={c.num}
                 className={`border-2 border-[var(--color-bone)] p-6 md:p-8 flex flex-col ${
                   dark
-                    ? "bg-[var(--color-ink)] text-[var(--color-bone)]"
+                    ? "bg-[var(--color-bone)] text-[var(--color-ink)]"
                     : "bg-[var(--color-ink-2)] text-[var(--color-bone)]"
                 }`}
+
               >
                 <div className="flex items-center justify-between mb-6 pb-4 border-b-2 border-current">
                   <span className="text-xs font-mono uppercase tracking-widest opacity-60">
