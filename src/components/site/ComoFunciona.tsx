@@ -23,7 +23,7 @@ const STEPS = [
 
 export function ComoFunciona() {
   return (
-    <section id="como-funciona" className="bg-[var(--color-ink-2)] border-b-2 border-[var(--color-bone)]">
+    <section id="como-funciona" className="relative z-10 bg-[var(--color-ink-2)] border-b-2 border-[var(--color-bone)]">
       <div className="mx-auto max-w-7xl px-5 md:px-8 py-16 md:py-24">
         <div className="max-w-3xl mb-12 md:mb-14">
           <h2 className="font-display text-3xl md:text-5xl font-bold tracking-[-0.03em] leading-[1.04] text-[var(--color-bone)]">

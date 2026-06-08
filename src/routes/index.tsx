@@ -3,6 +3,7 @@ import { Header } from "@/components/site/Header";
 import { Hero } from "@/components/site/Hero";
 import { Solucoes } from "@/components/site/Solucoes";
 import { ComoFunciona } from "@/components/site/ComoFunciona";
+import { NetworkBackground } from "@/components/site/NetworkBackground";
 import { Projetos } from "@/components/site/Projetos";
 import { Footer } from "@/components/site/Footer";
 
@@ -31,9 +32,12 @@ function Index() {
     <div className="min-h-screen bg-[var(--color-ink)] overflow-x-hidden">
       <Header />
       <main>
-        <Hero />
-        <Solucoes />
-        <ComoFunciona />
+        <div className="relative overflow-hidden">
+          <NetworkBackground />
+          <Hero />
+          <Solucoes />
+          <ComoFunciona />
+        </div>
         <Projetos />
       </main>
       <Footer />

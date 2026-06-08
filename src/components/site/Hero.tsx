@@ -1,18 +1,9 @@
 import { ArrowRight } from "lucide-react";
-import nodesNetwork from "@/assets/conexoes-laranja-diagonal-transparente.svg";
 import { WHATSAPP_URL } from "./contact";
 
 export function Hero() {
   return (
-    <section id="top" className="relative">
-      {/* figura gigante vazando pras seções de cima e de baixo */}
-      <img
-        src={nodesNetwork}
-        alt=""
-        aria-hidden
-        className="absolute top-[54%] md:top-[62%] -translate-y-1/2 right-0 translate-x-[40%] rotate-[330deg] md:translate-x-[48%] lg:translate-x-[30%] xl:translate-x-[24%] w-[1650px] md:w-[2200px] lg:w-[2450px] xl:w-[2900px] max-w-none object-contain pointer-events-none opacity-40 lg:opacity-70 [mask-image:linear-gradient(to_right,transparent_0%,black_40%)] lg:[mask-image:linear-gradient(to_right,transparent_10%,black_50%)] z-0"
-      />
-
+    <section id="top" className="relative z-10">
       <div className="relative z-10 mx-auto max-w-7xl px-5 md:px-8 pt-32 pb-14 md:pt-40 md:pb-24 grid lg:grid-cols-[1.1fr_1fr] gap-12 lg:gap-16 items-center">
         <div className="relative z-10">
           <h1 className="max-w-4xl font-display text-[2.75rem] leading-[0.98] sm:text-5xl md:text-[3.9rem] lg:text-[4.35rem] font-bold tracking-[-0.03em] text-[var(--color-bone)]">
