@@ -1,8 +1,26 @@
+import ibApoioImage from "@/assets/ibapoio.png";
+import focoPromotoraImage from "@/assets/leadsuy3.focopromotora.com.br_.png";
+import vbbTechImage from "@/assets/vbbtech.png";
+
 const CASES = [
-  { tag: "Site", title: "Site institucional personalizado", text: "Criação de site responsivo para apresentar serviços, facilitar contato e melhorar a presença digital da empresa." },
-  { tag: "Sistema", title: "Sistema web com backend", text: "Desenvolvimento de painel para organizar informações internas, cadastros e processos operacionais." },
-  { tag: "Integração", title: "Integração via webhook", text: "Automação para receber dados de uma plataforma e enviar para outra API, reduzindo preenchimento manual." },
-  { tag: "Landing Page", title: "Landing page de captação", text: "Página focada em conversão, com formulário e direcionamento para atendimento comercial." },
+  {
+    tag: "Site institucional",
+    title: "IB Apoio Administrativo",
+    text: "Site institucional para uma empresa de apoio administrativo, com foco em transmitir organização, segurança e eficiência operacional para negócios que precisam de suporte em rotinas administrativas.",
+    image: ibApoioImage,
+  },
+  {
+    tag: "Site institucional",
+    title: "VBB TECH",
+    text: "Site institucional para uma empresa de engenharia em Porto Alegre/RS, com foco em segurança, qualidade, responsabilidade técnica e cumprimento de prazos.",
+    image: vbbTechImage,
+  },
+  {
+    tag: "Sistema web",
+    title: "Sistema interno p/ recebimento e gestão de leads",
+    text: "Sistema web para gestão de leads recebidos via webhook, usado em operações parceiras da UY3. Conta com backend em Go, autenticação, dashboard operacional, filtros por período e exportação CSV para centralizar os dados e reduzir o trabalho manual na conferência e organização dos leads.",
+    image: focoPromotoraImage,
+  },
 ];
 
 export function Projetos() {
@@ -20,21 +38,17 @@ export function Projetos() {
         </div>
 
         <div className="grid sm:grid-cols-2 gap-5 md:gap-6">
-          {CASES.map((c, i) => (
+          {CASES.map((c) => (
             <article
               key={c.title}
-              className="bg-[var(--color-ink-2)] border-2 border-[var(--color-bone)] flex flex-col"
+              className="bg-[var(--color-ink-2)] border-2 border-[var(--color-bone)] flex flex-col overflow-hidden"
             >
-              {/* Área reservada para print real */}
               <div className="aspect-[16/9] border-b-2 border-[var(--color-bone)] bg-[var(--color-ink-2)] relative overflow-hidden">
-                <div className="absolute inset-3 border border-dashed border-[var(--color-bone)]/30 flex items-center justify-center">
-                  <span className="text-[10px] font-mono uppercase tracking-widest text-[var(--color-bone)]/40">
-                    print do projeto
-                  </span>
-                </div>
-                <div className="absolute top-3 left-3 text-[10px] font-mono text-[var(--color-bone)]/50">
-                  case_{String(i + 1).padStart(2, "0")}
-                </div>
+                <img
+                  src={c.image}
+                  alt={c.title}
+                  className="h-full w-full object-cover object-top"
+                />
               </div>
               <div className="p-6 md:p-7">
                 <span className="inline-block bg-[var(--color-rust)] text-[var(--color-bone)] text-[10px] font-mono uppercase tracking-widest px-2 py-1 mb-4">
@@ -43,7 +57,9 @@ export function Projetos() {
                 <h3 className="font-display text-xl md:text-[1.75rem] font-bold tracking-[-0.02em] leading-[1.08] text-[var(--color-bone)]">
                   {c.title}
                 </h3>
-                <p className="mt-3 text-sm md:text-base text-[var(--color-bone)]/70 leading-relaxed">{c.text}</p>
+                <p className="mt-3 text-sm md:text-base text-[var(--color-bone)]/70 leading-relaxed">
+                  {c.text}
+                </p>
               </div>
             </article>
           ))}
