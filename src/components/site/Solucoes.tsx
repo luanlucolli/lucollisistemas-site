@@ -2,21 +2,21 @@ const CARDS = [
   {
     num: "01",
     title: "Sites e Landing Pages",
-    text: "Para apresentar sua empresa, explicar seus serviços e gerar contatos qualificados.",
-    items: ["Sites institucionais", "Landing pages", "Formulários", "Botões de WhatsApp", "SEO básico"],
+    text: "Para mostrar o que sua empresa faz, facilitar o contato e transformar visitantes em pedidos de orçamento.",
+    items: ["Sites institucionais", "Landing pages", "Formulários", "WhatsApp direto", "SEO básico"],
     invert: false,
   },
   {
     num: "02",
     title: "Sistemas Web",
-    text: "Para organizar clientes, pedidos, propostas, relatórios e processos internos.",
+    text: "Para tirar processos da planilha, centralizar informações e acompanhar clientes, pedidos ou propostas em um painel próprio.",
     items: ["Login", "Painel administrativo", "Cadastros", "Relatórios", "Banco de dados"],
     invert: true,
   },
   {
     num: "03",
     title: "Automações e Integrações",
-    text: "Para conectar WhatsApp, planilhas, APIs, webhooks e ferramentas que sua empresa já usa.",
+    text: "Para fazer suas ferramentas trabalharem juntas e reduzir tarefas repetitivas no atendimento, nas vendas e na operação.",
     items: ["WhatsApp", "Planilhas", "APIs", "Webhooks", "CRMs", "E-mails automáticos"],
     invert: false,
   },
@@ -28,11 +28,11 @@ export function Solucoes() {
       <div className="mx-auto max-w-7xl px-5 md:px-8 py-16 md:py-24">
         <div className="max-w-3xl mb-12 md:mb-14">
           <h2 className="font-display text-3xl md:text-5xl font-bold tracking-[-0.03em] leading-[1.04] text-[var(--color-bone)]">
-            Soluções sob medida para negócios reais.
+            O que podemos construir para sua empresa.
           </h2>
           <p className="mt-4 max-w-2xl text-base md:text-lg text-[var(--color-bone)]/70 leading-relaxed">
-            Cada entrega e pensada para melhorar a operação, facilitar o atendimento e dar mais
-            clareza para o dono do negócio.
+            Do primeiro contato ao processo interno: criamos ferramentas para organizar a operação,
+            reduzir trabalho manual e deixar as informações no lugar certo.
           </p>
         </div>
 
@@ -59,7 +59,11 @@ export function Solucoes() {
                 <h3 className="font-display text-xl md:text-[1.75rem] font-bold leading-[1.08] tracking-[-0.02em]">
                   {c.title}
                 </h3>
-                <p className={`mt-3 text-sm md:text-base leading-relaxed ${dark ? "text-[var(--color-ink)]/75" : "text-[var(--color-bone)]/70"}`}>
+                <p
+                  className={`mt-3 text-sm md:text-base leading-relaxed ${
+                    dark ? "text-[var(--color-ink)]/75" : "text-[var(--color-bone)]/70"
+                  }`}
+                >
                   {c.text}
                 </p>
                 <ul className="mt-6 flex flex-wrap gap-2">
