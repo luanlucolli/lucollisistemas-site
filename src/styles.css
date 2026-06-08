@@ -48,26 +48,27 @@
 
 :root {
   --radius: 0.25rem;
-  --background: #f5f3ee;
-  --foreground: #22252a;
-  --card: #ffffff;
-  --card-foreground: #22252a;
-  --popover: #ffffff;
-  --popover-foreground: #22252a;
+  --background: #22252a;
+  --foreground: #f5f3ee;
+  --card: #2c2f35;
+  --card-foreground: #f5f3ee;
+  --popover: #2c2f35;
+  --popover-foreground: #f5f3ee;
   --primary: #d9531e;
   --primary-foreground: #f5f3ee;
-  --secondary: #22252a;
-  --secondary-foreground: #f5f3ee;
-  --muted: #ece9e1;
-  --muted-foreground: #5a5d63;
+  --secondary: #f5f3ee;
+  --secondary-foreground: #22252a;
+  --muted: #2c2f35;
+  --muted-foreground: #b6b3ab;
   --accent: #d9531e;
   --accent-foreground: #f5f3ee;
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: #f5f3ee;
-  --border: #22252a;
-  --input: #22252a;
+  --border: #f5f3ee;
+  --input: #f5f3ee;
   --ring: #d9531e;
 }
+
 
 .dark {
   --background: #22252a;
@@ -82,8 +83,8 @@
     border-color: var(--color-border);
   }
   body {
-    background-color: var(--color-bone);
-    color: var(--color-ink);
+    background-color: var(--color-ink);
+    color: var(--color-bone);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
   }
@@ -94,8 +95,9 @@
 }
 
 @utility brutal-shadow {
-  box-shadow: 4px 4px 0 0 var(--color-ink);
+  box-shadow: 4px 4px 0 0 var(--color-bone);
 }
 @utility brutal-shadow-rust {
   box-shadow: 4px 4px 0 0 var(--color-rust);
 }
+
