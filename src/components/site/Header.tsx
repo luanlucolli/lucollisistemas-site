@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
 import logoImage from "@/assets/lucolli-logo.png.png";
 import { WHATSAPP_URL } from "./contact";
@@ -12,8 +12,24 @@ const NAV = [
 
 export function Header() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50); // aumentei um pouco pra não engatilhar tão fácil
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[var(--color-ink)]/80 backdrop-blur-md">
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 border-b transition-all duration-500 ease-in-out ${
+        scrolled
+          ? "bg-[var(--color-ink)]/95 backdrop-blur-md border-[var(--color-bone)]/10 shadow-sm"
+          : "bg-transparent border-transparent"
+      }`}
+    >
       <div className="mx-auto max-w-7xl px-5 md:px-8 h-16 md:h-20 flex items-center justify-between">
         <a href="#top" className="flex items-center">
           <img src={logoImage} alt="Luçolli Sistemas" className="h-7 md:h-9 w-auto" />

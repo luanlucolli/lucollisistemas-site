@@ -10,10 +10,10 @@ export function Hero() {
         src={nodesNetwork}
         alt=""
         aria-hidden
-        className="absolute top-1/2 -translate-y-1/2 right-0 translate-x-[40%] rotate-[330deg] md:translate-x-[48%] lg:translate-x-[30%] xl:translate-x-[24%] w-[1350px] md:w-[1800px] lg:w-[2450px] xl:w-[2900px] max-w-none object-contain pointer-events-none opacity-40 lg:opacity-70 [mask-image:linear-gradient(to_right,transparent_0%,black_40%)] lg:[mask-image:linear-gradient(to_right,transparent_10%,black_50%)] z-0"
+        className="absolute top-[40%] md:top-1/2 -translate-y-1/2 right-0 translate-x-[40%] rotate-[330deg] md:translate-x-[48%] lg:translate-x-[30%] xl:translate-x-[24%] w-[1350px] md:w-[1800px] lg:w-[2450px] xl:w-[2900px] max-w-none object-contain pointer-events-none opacity-40 lg:opacity-70 [mask-image:linear-gradient(to_right,transparent_0%,black_40%)] lg:[mask-image:linear-gradient(to_right,transparent_10%,black_50%)] z-0"
       />
 
-      <div className="relative z-10 mx-auto max-w-7xl px-5 md:px-8 py-14 md:py-24 grid lg:grid-cols-[1.1fr_1fr] gap-12 lg:gap-16 items-center">
+      <div className="relative z-10 mx-auto max-w-7xl px-5 md:px-8 pt-32 pb-14 md:pt-40 md:pb-24 grid lg:grid-cols-[1.1fr_1fr] gap-12 lg:gap-16 items-center">
         <div className="relative z-10">
           <h1 className="font-display text-[2.5rem] leading-[1.02] sm:text-5xl md:text-6xl lg:text-[4.25rem] font-bold text-[var(--color-bone)]">
             Sites, sistemas e automações que{" "}
