@@ -10,20 +10,21 @@ const STEP_ICONS = {
 
 export function ComoFunciona() {
   return (
-    <section 
-      id="como-funciona" 
+    <section
+      id="como-funciona"
       className="relative z-10 bg-[var(--color-bone)] text-[var(--color-ink)] border-b-2 border-[var(--color-ink)]"
     >
-      <div className="mx-auto max-w-7xl px-5 md:px-8 py-20 md:py-32">
+      <div className="mx-auto max-w-7xl px-5 md:px-8 py-16 md:py-24">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-24">
-          
           {/* lado esquerdo: travado (sticky) */}
           <div className="lg:w-1/3 lg:sticky lg:top-32 h-fit">
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold tracking-[-0.03em] leading-[1.04] text-[var(--color-ink)]">
+            <h2 className="font-display text-3xl md:text-5xl font-bold tracking-[-0.03em] leading-[1.04] text-[var(--color-ink)]">
               {siteCopy.comoFunciona.titleLine1}
               <br />
               {siteCopy.comoFunciona.titleLine2}{" "}
-              <span className="text-[var(--color-rust)]">{siteCopy.comoFunciona.titleHighlight}</span>
+              <span className="text-[var(--color-rust)]">
+                {siteCopy.comoFunciona.titleHighlight}
+              </span>
             </h2>
             <p className="mt-6 text-base md:text-lg text-[var(--color-ink)]/75 leading-relaxed font-medium">
               {siteCopy.comoFunciona.description}
@@ -42,17 +43,17 @@ export function ComoFunciona() {
                   <div className="flex items-center justify-center w-14 h-14 md:w-16 md:h-16 shrink-0 bg-[var(--color-ink)] text-[var(--color-bone)] border-2 border-[var(--color-ink)] group-hover:bg-[var(--color-rust)] group-hover:text-[var(--color-bone)] transition-colors">
                     <Icon strokeWidth={2} className="w-7 h-7 md:w-8 md:h-8" />
                   </div>
-                  
+
                   <div>
                     <div className="flex items-center gap-3 mb-2">
                       <span className="font-mono text-sm font-bold text-[var(--color-rust)] uppercase tracking-wider">
                         {siteCopy.comoFunciona.phasePrefix} {step.id}
                       </span>
                     </div>
-                    <h3 className="font-display text-2xl md:text-3xl font-bold text-[var(--color-ink)] mb-3">
+                    <h3 className="font-display text-xl md:text-[1.75rem] font-bold tracking-[-0.02em] leading-[1.08] text-[var(--color-ink)] mb-3">
                       {step.title}
                     </h3>
-                    <p className="text-base text-[var(--color-ink)]/80 leading-relaxed font-medium">
+                    <p className="text-base md:text-lg text-[var(--color-ink)]/80 leading-relaxed font-medium">
                       {step.desc}
                     </p>
                   </div>
@@ -60,7 +61,6 @@ export function ComoFunciona() {
               );
             })}
           </div>
-
         </div>
       </div>
     </section>
