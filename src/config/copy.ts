@@ -73,35 +73,36 @@ export const siteCopy = {
   },
 
   comoFunciona: {
-    titleLine1: "Primeiro a rotina.",
-    titleLine2: "Depois a",
-    titleHighlight: "solução.",
+    titleLine1: "A gente entende o problema.",
+    titleLine2: "Depois constrói a",
+    titleHighlight: "ferramenta.",
     description:
-      "Antes de propor qualquer coisa, entendemos como sua empresa trabalha hoje. A ideia é criar algo útil, simples de usar e do tamanho certo para o problema.",
+      "O processo começa com uma conversa simples sobre como sua empresa trabalha hoje. A partir disso, definimos o que precisa ser feito e criamos uma solução que faça sentido no uso real.",
     phasePrefix: "Passo",
     steps: [
       {
         id: "01",
-        title: "Diagnóstico",
-        desc: "Conversamos para entender como sua empresa atende, vende, organiza dados e quais tarefas ainda dependem de planilhas, mensagens ou controles manuais.",
+        title: "Entendimento",
+        desc: "Conversamos para entender como sua empresa atende, vende, organiza informações e quais partes da rotina ainda dependem de controles manuais.",
       },
       {
         id: "02",
-        title: "Planejamento",
-        desc: "Definimos o que realmente precisa ser construído, sem colocar complexidade onde não precisa.",
+        title: "Definição",
+        desc: "Separamos o que é prioridade, o que pode esperar e qual solução faz mais sentido: site, sistema, automação ou integração.",
       },
       {
         id: "03",
-        title: "Desenvolvimento",
-        desc: "Criamos o site, sistema ou automação pensando no uso real: telas claras, fluxo simples e informação no lugar certo.",
+        title: "Construção",
+        desc: "Criamos a ferramenta pensando no uso do dia a dia, com telas claras, fluxo simples e informações fáceis de encontrar.",
       },
       {
         id: "04",
-        title: "Entrega",
-        desc: "Colocamos em funcionamento, testamos com você e ajustamos o que aparecer no uso do dia a dia.",
+        title: "Entrega e ajustes",
+        desc: "Colocamos em funcionamento, testamos com você e ajustamos o que aparecer no uso real.",
       },
     ],
   },
+
 
   projetos: {
     title: "Projetos que já saíram do papel.",
