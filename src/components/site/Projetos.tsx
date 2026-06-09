@@ -11,12 +11,29 @@ const CASE_IMAGES = {
   landingville: landingvilleImage,
 } as const;
 
+const CASE_IMAGE_ALTS = {
+  "ib-apoio":
+    "Captura do site institucional IB Apoio Administrativo desenvolvido pela Luçolli Sistemas",
+  "vbb-tech": "Captura do site institucional VBB Tech desenvolvido pela Luçolli Sistemas",
+  leads:
+    "Captura do painel interno para gestão de leads desenvolvido pela Luçolli Sistemas",
+  landingville:
+    "Captura da landing page Landingville criada como projeto próprio de captação",
+} as const;
+
 export function Projetos() {
   return (
-    <section id="projetos" className="bg-[var(--color-ink)] border-b-2 border-[var(--color-bone)]">
+    <section
+      id="projetos"
+      aria-labelledby="projetos-title"
+      className="bg-[var(--color-ink)] border-b-2 border-[var(--color-bone)]"
+    >
       <div className="mx-auto max-w-7xl px-5 md:px-8 py-16 md:py-24">
         <div className="max-w-3xl mb-12 md:mb-14">
-          <h2 className="font-display text-3xl md:text-5xl font-bold tracking-[-0.03em] leading-[1.04] text-[var(--color-bone)]">
+          <h2
+            id="projetos-title"
+            className="font-display text-3xl md:text-5xl font-bold tracking-[-0.03em] leading-[1.04] text-[var(--color-bone)]"
+          >
             {siteCopy.projetos.title}
           </h2>
           <p className="mt-4 max-w-2xl text-[var(--color-bone)]/70 text-base md:text-lg leading-relaxed">
@@ -28,12 +45,15 @@ export function Projetos() {
           {siteCopy.projetos.cards.map((c) => (
             <article
               key={c.title}
+              aria-labelledby={`projeto-${c.id}`}
               className="bg-[var(--color-ink-2)] border-2 border-[var(--color-bone)] flex flex-col overflow-hidden"
             >
               <div className="aspect-[16/9] border-b-2 border-[var(--color-bone)] bg-[var(--color-ink-2)] relative overflow-hidden">
                 <img
                   src={CASE_IMAGES[c.id]}
-                  alt={c.title}
+                  alt={CASE_IMAGE_ALTS[c.id]}
+                  loading="lazy"
+                  decoding="async"
                   className="h-full w-full object-cover object-top"
                 />
               </div>
@@ -41,7 +61,10 @@ export function Projetos() {
                 <span className="inline-block bg-[var(--color-rust)] text-[var(--color-bone)] text-[10px] font-mono uppercase tracking-widest px-2 py-1 mb-4">
                   {c.tag}
                 </span>
-                <h3 className="font-display text-xl md:text-[1.75rem] font-bold tracking-[-0.02em] leading-[1.08] text-[var(--color-bone)]">
+                <h3
+                  id={`projeto-${c.id}`}
+                  className="font-display text-xl md:text-[1.75rem] font-bold tracking-[-0.02em] leading-[1.08] text-[var(--color-bone)]"
+                >
                   {c.title}
                 </h3>
                 <p className="mt-3 text-sm md:text-base text-[var(--color-bone)]/70 leading-relaxed">
