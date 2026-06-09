@@ -7,37 +7,39 @@ export const siteCopy = {
       { href: "#projetos", label: "Projetos" },
       { href: "#contato", label: "Contato" },
     ],
-    primaryCta: "Entrar em contato",
+    primaryCta: "Falar no WhatsApp",
     whatsappAriaLabel: "WhatsApp",
     menuAriaLabel: "Menu",
   },
+
   hero: {
-    titleStart: "Sites, sistemas e automações que",
-    titleHighlight: "organizam",
-    titleEnd: "seu negócio.",
+    titleStart: "Sites, sistemas e automações para",
+    titleHighlight: "organizar",
+    titleEnd: "a rotina da sua empresa.",
     description:
-      "Criamos soluções digitais sob medida para empresas que precisam captar clientes, integrar ferramentas e reduzir tarefas manuais.",
+      "Criamos ferramentas sob medida para empresas que precisam melhorar o atendimento, centralizar informações e reduzir tarefas manuais.",
     eyebrow:
-      "Integrações com WhatsApp, planilhas, APIs e webhooks. Tudo feito para o seu processo.",
-    primaryCta: "Entrar em contato",
+      "Sites, painéis internos e integrações com WhatsApp, planilhas, APIs e webhooks.",
+    primaryCta: "Chamar no WhatsApp",
     secondaryCta: "Ver soluções",
   },
+
   solucoes: {
-    title: "O que podemos construir para sua empresa.",
+    title: "A solução certa depende da sua rotina.",
     description:
-      "Criamos ferramentas para organizar a operação, reduzir trabalho manual e deixar as informações no lugar certo.",
+      "Pode ser um site para explicar melhor o seu serviço, um sistema para organizar dados ou uma automação para evitar trabalho repetido.",
     badgePrefix: "Solução",
     cards: [
       {
         id: "01",
         num: "01",
         title: "Sites e Landing Pages",
-        text: "Para mostrar o que sua empresa faz, facilitar o contato e transformar visitantes em pedidos de orçamento.",
+        text: "Para apresentar sua empresa com clareza, facilitar o contato e ajudar o cliente a entender o que você oferece.",
         items: [
           "Sites institucionais",
-          "Landing pages",
-          "Formulários",
-          "WhatsApp direto",
+          "Páginas de venda",
+          "Formulários integrados",
+          "Botão para WhatsApp",
           "SEO básico",
         ],
       },
@@ -45,82 +47,98 @@ export const siteCopy = {
         id: "02",
         num: "02",
         title: "Sistemas Web",
-        text: "Para tirar processos da planilha, centralizar informações e acompanhar clientes, pedidos ou propostas em um painel próprio.",
-        items: ["Login", "Painel administrativo", "Cadastros", "Relatórios", "Banco de dados"],
+        text: "Para tirar informações de planilhas soltas, organizar processos internos e acompanhar tudo em um painel próprio.",
+        items: [
+          "Acesso seguro",
+          "Painel de controle",
+          "Gestão de clientes",
+          "Relatórios simples",
+          "Dados centralizados",
+        ],
       },
       {
         id: "03",
         num: "03",
         title: "Automações e Integrações",
-        text: "Para fazer suas ferramentas trabalharem juntas e reduzir tarefas repetitivas no atendimento, nas vendas e na operação.",
-        items: ["WhatsApp", "Planilhas", "APIs", "Webhooks", "CRMs", "E-mails automáticos"],
+        text: "Para conectar ferramentas, preencher dados automaticamente e reduzir tarefas que hoje são feitas no braço.",
+        items: [
+          "WhatsApp",
+          "Planilhas automáticas",
+          "Integração de sistemas",
+          "Avisos e alertas",
+          "E-mails automáticos",
+        ],
       },
     ],
   },
+
   comoFunciona: {
-    titleLine1: "Menos teoria.",
-    titleLine2: "Mais",
-    titleHighlight: "prática.",
+    titleLine1: "Primeiro a rotina.",
+    titleLine2: "Depois a",
+    titleHighlight: "solução.",
     description:
-      "Nosso método é direto ao ponto. Entendemos a raiz do problema e construímos exatamente o que você precisa pra resolver, sem adicionar complexidade à toa.",
-    phasePrefix: "Fase",
+      "Antes de propor qualquer coisa, entendemos como sua empresa trabalha hoje. A ideia é criar algo útil, simples de usar e do tamanho certo para o problema.",
+    phasePrefix: "Passo",
     steps: [
       {
         id: "01",
-        title: "Diagnóstico Real",
-        desc: "Mapeamos seu processo atual e identificamos os gargalos. Sem tentar empurrar ferramentas que não fazem sentido pro seu momento.",
+        title: "Diagnóstico",
+        desc: "Conversamos para entender como sua empresa atende, vende, organiza dados e quais tarefas ainda dependem de planilhas, mensagens ou controles manuais.",
       },
       {
         id: "02",
-        title: "Estratégia",
-        desc: "Desenhamos a solução ideal focando no que traz resultado rápido. Menos firula técnica, mais eficiência pro dia a dia.",
+        title: "Planejamento",
+        desc: "Definimos o que realmente precisa ser construído, sem colocar complexidade onde não precisa.",
       },
       {
         id: "03",
-        title: "Execução",
-        desc: "Desenvolvimento sob medida. Criamos seu site, sistema ou automação integrando com as plataformas que sua equipe já domina.",
+        title: "Desenvolvimento",
+        desc: "Criamos o site, sistema ou automação pensando no uso real: telas claras, fluxo simples e informação no lugar certo.",
       },
       {
         id: "04",
-        title: "Lançamento",
-        desc: "Colocamos tudo no ar, testamos na prática e damos o suporte inicial. Sua operação começa a rodar mais leve imediatamente.",
+        title: "Entrega",
+        desc: "Colocamos em funcionamento, testamos com você e ajustamos o que aparecer no uso do dia a dia.",
       },
     ],
   },
+
   projetos: {
     title: "Projetos que já saíram do papel.",
     description:
-      "Projetos reais, desenvolvidos e entregues para clientes que precisavam melhorar sua presença digital, organizar operações e reduzir trabalho manual no dia a dia.",
+      "Alguns trabalhos criados para empresas e operações que precisavam se apresentar melhor, organizar dados ou reduzir etapas manuais.",
     cards: [
       {
         id: "ib-apoio",
         tag: "Site institucional",
         title: "IB Apoio Administrativo",
-        text: "Site institucional para uma empresa de apoio administrativo, com foco em transmitir organização, segurança e eficiência operacional para negócios que precisam de suporte em rotinas administrativas.",
+        text: "Site criado para apresentar os serviços da empresa de forma clara e transmitir organização para quem busca apoio em rotinas administrativas.",
       },
       {
         id: "vbb-tech",
         tag: "Site institucional",
         title: "VBB Tech",
-        text: "Site institucional para uma empresa de engenharia em Porto Alegre/RS, com foco em segurança, qualidade, responsabilidade técnica e cumprimento de prazos.",
+        text: "Site institucional para uma empresa de engenharia, com foco em explicar os serviços, reforçar responsabilidade técnica e facilitar o primeiro contato.",
       },
       {
         id: "leads",
         tag: "Sistema web",
         title: "Painel interno para gestão de leads",
-        text: "Sistema criado para receber leads automaticamente via webhook, organizar os dados em um painel e permitir filtros por período e exportação CSV. Menos conferência manual, mais controle da operação.",
+        text: "Sistema criado para receber contatos automaticamente via webhook, organizar os dados em um painel e permitir filtros por período e exportação CSV.",
       },
       {
         id: "landingville",
         tag: "Landing Page",
         title: "Landingville",
-        text: "Página de captação criada para negócios locais, com diagnóstico rápido, apresentação de serviços, exemplos visuais e contato direto por WhatsApp ou Instagram.",
+        text: "Página de captação criada para apresentar uma oferta de sites para negócios locais, com explicação simples do serviço e contato direto pelo WhatsApp.",
       },
     ],
   },
+
   footer: {
     logoAlt: "Luçolli Sistemas",
-    description: "Sites, sistemas e automações para empresas.",
+    description:
+      "Sites, sistemas e automações para deixar a rotina da empresa mais organizada.",
     navTitle: "Navegar",
     nav: [
       { href: "#solucoes", label: "Soluções" },
@@ -131,7 +149,7 @@ export const siteCopy = {
     contactTitle: "Contato",
     whatsappLabel: "WhatsApp",
     instagramLabel: "Instagram",
-    copyright: "© Luçolli Sistemas. Soluções digitais sob medida.",
+    copyright: "© Luçolli Sistemas. Ferramentas digitais feitas para rotinas reais.",
     versionLabel: "v1.0",
   },
 } as const;
