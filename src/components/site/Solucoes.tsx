@@ -1,26 +1,10 @@
-const CARDS = [
-  {
-    num: "01",
-    title: "Sites e Landing Pages",
-    text: "Para mostrar o que sua empresa faz, facilitar o contato e transformar visitantes em pedidos de orçamento.",
-    items: ["Sites institucionais", "Landing pages", "Formulários", "WhatsApp direto", "SEO básico"],
-    invert: false,
-  },
-  {
-    num: "02",
-    title: "Sistemas Web",
-    text: "Para tirar processos da planilha, centralizar informações e acompanhar clientes, pedidos ou propostas em um painel próprio.",
-    items: ["Login", "Painel administrativo", "Cadastros", "Relatórios", "Banco de dados"],
-    invert: true,
-  },
-  {
-    num: "03",
-    title: "Automações e Integrações",
-    text: "Para fazer suas ferramentas trabalharem juntas e reduzir tarefas repetitivas no atendimento, nas vendas e na operação.",
-    items: ["WhatsApp", "Planilhas", "APIs", "Webhooks", "CRMs", "E-mails automáticos"],
-    invert: false,
-  },
-];
+import { siteCopy } from "@/config/copy";
+
+const CARD_VISUALS = {
+  "01": { invert: false },
+  "02": { invert: true },
+  "03": { invert: false },
+} as const;
 
 export function Solucoes() {
   return (
@@ -28,17 +12,16 @@ export function Solucoes() {
       <div className="mx-auto max-w-7xl px-5 md:px-8 py-16 md:py-24">
         <div className="max-w-3xl mb-12 md:mb-14">
           <h2 className="font-display text-3xl md:text-5xl font-bold tracking-[-0.03em] leading-[1.04] text-[var(--color-bone)]">
-            O que podemos construir para sua empresa.
+            {siteCopy.solucoes.title}
           </h2>
           <p className="mt-4 max-w-2xl text-base md:text-lg text-[var(--color-bone)]/70 leading-relaxed">
-            Criamos ferramentas para organizar a operação,
-            reduzir trabalho manual e deixar as informações no lugar certo.
+            {siteCopy.solucoes.description}
           </p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-5 md:gap-6">
-          {CARDS.map((c) => {
-            const dark = c.invert;
+          {siteCopy.solucoes.cards.map((c) => {
+            const dark = CARD_VISUALS[c.id].invert;
             return (
               <div
                 key={c.num}
@@ -50,7 +33,7 @@ export function Solucoes() {
               >
                 <div className="flex items-center justify-between mb-6 pb-4 border-b-2 border-current">
                   <span className="text-xs font-mono uppercase tracking-widest opacity-60">
-                    Solução {c.num}
+                    {siteCopy.solucoes.badgePrefix} {c.num}
                   </span>
                   <span className="text-[var(--color-rust)] font-display font-bold text-2xl">
                     {c.num}

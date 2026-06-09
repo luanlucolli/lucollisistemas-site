@@ -1,31 +1,12 @@
 import { MessageSquare, Map, Code2, Rocket } from "lucide-react";
+import { siteCopy } from "@/config/copy";
 
-const STEPS = [
-  {
-    id: "01",
-    icon: MessageSquare,
-    title: "Diagnóstico Real",
-    desc: "Mapeamos seu processo atual e identificamos os gargalos. Sem tentar empurrar ferramentas que não fazem sentido pro seu momento.",
-  },
-  {
-    id: "02",
-    icon: Map,
-    title: "Estratégia",
-    desc: "Desenhamos a solução ideal focando no que traz resultado rápido. Menos firula técnica, mais eficiência pro dia a dia.",
-  },
-  {
-    id: "03",
-    icon: Code2,
-    title: "Execução",
-    desc: "Desenvolvimento sob medida. Criamos seu site, sistema ou automação integrando com as plataformas que sua equipe já domina.",
-  },
-  {
-    id: "04",
-    icon: Rocket,
-    title: "Lançamento",
-    desc: "Colocamos tudo no ar, testamos na prática e damos o suporte inicial. Sua operação começa a rodar mais leve imediatamente.",
-  },
-];
+const STEP_ICONS = {
+  "01": MessageSquare,
+  "02": Map,
+  "03": Code2,
+  "04": Rocket,
+} as const;
 
 export function ComoFunciona() {
   return (
@@ -39,18 +20,20 @@ export function ComoFunciona() {
           {/* lado esquerdo: travado (sticky) */}
           <div className="lg:w-1/3 lg:sticky lg:top-32 h-fit">
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold tracking-[-0.03em] leading-[1.04] text-[var(--color-ink)]">
-              Menos teoria.<br/>
-              Mais <span className="text-[var(--color-rust)]">prática.</span>
+              {siteCopy.comoFunciona.titleLine1}
+              <br />
+              {siteCopy.comoFunciona.titleLine2}{" "}
+              <span className="text-[var(--color-rust)]">{siteCopy.comoFunciona.titleHighlight}</span>
             </h2>
             <p className="mt-6 text-base md:text-lg text-[var(--color-ink)]/75 leading-relaxed font-medium">
-              Nosso método é direto ao ponto. Entendemos a raiz do problema e construímos exatamente o que você precisa pra resolver, sem adicionar complexidade à toa.
+              {siteCopy.comoFunciona.description}
             </p>
           </div>
 
           {/* lado direito: scroll dos passos */}
           <div className="lg:w-2/3 flex flex-col gap-6 md:gap-8">
-            {STEPS.map((step) => {
-              const Icon = step.icon;
+            {siteCopy.comoFunciona.steps.map((step) => {
+              const Icon = STEP_ICONS[step.id];
               return (
                 <div
                   key={step.id}
@@ -63,7 +46,7 @@ export function ComoFunciona() {
                   <div>
                     <div className="flex items-center gap-3 mb-2">
                       <span className="font-mono text-sm font-bold text-[var(--color-rust)] uppercase tracking-wider">
-                        Fase {step.id}
+                        {siteCopy.comoFunciona.phasePrefix} {step.id}
                       </span>
                     </div>
                     <h3 className="font-display text-2xl md:text-3xl font-bold text-[var(--color-ink)] mb-3">
