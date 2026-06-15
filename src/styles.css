@@ -1,6 +1,5 @@
 @import "tailwindcss" source(none);
 @source "../src";
-@import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -69,7 +68,6 @@
   --ring: #d9531e;
 }
 
-
 .dark {
   --background: #22252a;
   --foreground: #f5f3ee;
@@ -88,7 +86,10 @@
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
   }
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     font-family: var(--font-display);
     letter-spacing: -0.02em;
   }
@@ -100,4 +101,3 @@
 @utility brutal-shadow-rust {
   box-shadow: 4px 4px 0 0 var(--color-rust);
 }
-

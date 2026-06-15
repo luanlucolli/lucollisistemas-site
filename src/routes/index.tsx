@@ -10,8 +10,7 @@ import { Footer } from "@/components/site/Footer";
 const SITE_URL = "https://lucollisistemas.com.br";
 const SITE_NAME = "Luçolli Sistemas";
 
-const PAGE_TITLE =
-  "Luçolli Sistemas | Sites, sistemas e automações para empresas";
+const PAGE_TITLE = "Luçolli Sistemas | Sites, sistemas e automações para empresas";
 const PAGE_DESCRIPTION =
   "Criamos sites, sistemas web, automações e integrações com WhatsApp, planilhas, APIs e webhooks para empresas que querem reduzir trabalho manual.";
 const PAGE_KEYWORDS =
@@ -50,8 +49,7 @@ const professionalServiceSchema = {
   "@type": "ProfessionalService",
   name: SITE_NAME,
   url: SITE_URL,
-  description:
-    "Sites, sistemas web, automações e integrações sob medida para empresas.",
+  description: "Sites, sistemas web, automações e integrações sob medida para empresas.",
   areaServed: [
     {
       "@type": "Country",
@@ -193,10 +191,7 @@ export const Route = createFileRoute("/")({
 
 function JsonLd({ data }: { data: object }) {
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
-    />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
   );
 }
 

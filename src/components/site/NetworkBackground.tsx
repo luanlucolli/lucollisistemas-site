@@ -2,10 +2,7 @@ import nodesNetwork from "@/assets/conexoes-laranja-diagonal-transparente.svg";
 
 export function NetworkBackground() {
   return (
-    <div
-      aria-hidden
-      className="pointer-events-none absolute inset-0 z-0 overflow-hidden"
-    >
+    <div aria-hidden className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
       <img
         src={nodesNetwork}
         alt=""

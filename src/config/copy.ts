@@ -18,8 +18,7 @@ export const siteCopy = {
     titleEnd: "a rotina da sua empresa.",
     description:
       "Criamos ferramentas sob medida para empresas que precisam melhorar o atendimento, centralizar informações e reduzir tarefas manuais.",
-    eyebrow:
-      "Sites, painéis internos e integrações com WhatsApp, planilhas, APIs e webhooks.",
+    eyebrow: "Sites, painéis internos e integrações com WhatsApp, planilhas, APIs e webhooks.",
     primaryCta: "Chamar no WhatsApp",
     secondaryCta: "Ver soluções",
   },
@@ -103,7 +102,6 @@ export const siteCopy = {
     ],
   },
 
-
   projetos: {
     title: "Projetos que já saíram do papel.",
     description:
@@ -138,8 +136,7 @@ export const siteCopy = {
 
   footer: {
     logoAlt: "Luçolli Sistemas",
-    description:
-      "Sites, sistemas e automações para deixar a rotina da empresa mais organizada.",
+    description: "Sites, sistemas e automações para deixar a rotina da empresa mais organizada.",
     navTitle: "Navegar",
     nav: [
       { href: "#solucoes", label: "Soluções" },

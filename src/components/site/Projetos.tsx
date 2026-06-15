@@ -15,10 +15,8 @@ const CASE_IMAGE_ALTS = {
   "ib-apoio":
     "Captura do site institucional IB Apoio Administrativo desenvolvido pela Luçolli Sistemas",
   "vbb-tech": "Captura do site institucional VBB Tech desenvolvido pela Luçolli Sistemas",
-  leads:
-    "Captura do painel interno para gestão de leads desenvolvido pela Luçolli Sistemas",
-  landingville:
-    "Captura da landing page Landingville criada como projeto próprio de captação",
+  leads: "Captura do painel interno para gestão de leads desenvolvido pela Luçolli Sistemas",
+  landingville: "Captura da landing page Landingville criada como projeto próprio de captação",
 } as const;
 
 export function Projetos() {

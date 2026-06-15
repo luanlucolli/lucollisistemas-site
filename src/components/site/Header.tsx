@@ -19,7 +19,9 @@ export function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 border-b transition-all duration-500 ease-in-out ${
-        scrolled ? "bg-[var(--color-ink)]/95 backdrop-blur-md border-transparent shadow-sm" : "bg-transparent border-transparent"
+        scrolled
+          ? "bg-[var(--color-ink)]/95 backdrop-blur-md border-transparent shadow-sm"
+          : "bg-transparent border-transparent"
       }`}
     >
       <div className="mx-auto max-w-7xl px-5 md:px-8 h-16 md:h-20 flex items-center justify-between">
