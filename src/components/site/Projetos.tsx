@@ -27,14 +27,14 @@ export function Projetos() {
       className="bg-[var(--color-ink)] border-b-2 border-[var(--color-bone)]"
     >
       <div className="mx-auto max-w-7xl px-5 md:px-8 py-16 md:py-24">
-        <div className="max-w-3xl mb-12 md:mb-14">
+        <div className="max-w-3xl mb-16 md:mb-20">
           <h2
             id="projetos-title"
             className="font-display text-3xl md:text-5xl font-bold tracking-[-0.03em] leading-[1.04] text-[var(--color-bone)]"
           >
             {siteCopy.projetos.title}
           </h2>
-          <p className="mt-4 max-w-2xl text-[var(--color-bone)]/70 text-base md:text-lg leading-relaxed">
+          <p className="mt-6 max-w-2xl text-[var(--color-bone)]/70 text-base md:text-lg leading-relaxed font-medium">
             {siteCopy.projetos.description}
           </p>
         </div>
@@ -65,7 +65,7 @@ export function Projetos() {
                 >
                   {c.title}
                 </h3>
-                <p className="mt-3 text-sm md:text-base text-[var(--color-bone)]/70 leading-relaxed">
+                <p className="mt-4 text-base md:text-lg text-[var(--color-bone)]/70 leading-relaxed font-medium">
                   {c.text}
                 </p>
               </div>
