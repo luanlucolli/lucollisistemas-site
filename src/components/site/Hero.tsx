@@ -14,10 +14,10 @@ export function Hero() {
             </span>{" "}
             {siteCopy.hero.titleEnd}
           </h1>
-          <p className="mt-6 max-w-2xl text-base md:text-lg text-[var(--color-bone)]/74 leading-relaxed">
+          <p className="mt-6 max-w-2xl text-lg md:text-xl text-[var(--color-bone)]/88 leading-relaxed">
             {siteCopy.hero.description}
           </p>
-          <p className="mt-4 max-w-2xl text-sm md:text-base text-[var(--color-bone)]/92 font-medium leading-relaxed">
+          <p className="mt-4 max-w-2xl text-sm md:text-base text-[var(--color-bone)]/78 leading-relaxed">
             {siteCopy.hero.eyebrow}
           </p>
 
